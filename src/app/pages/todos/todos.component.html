@@ -1,0 +1,19 @@
+<section id="todo" class="todo sect-pt4 mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="anime-title">
+                    <h2>Todo</h2>
+                    <div class="line"></div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12 mt-3">
+                <app-todo-list [todos]="todos" (toggleTodo)="onToggleTodos($event)" (deleteTodo)="onDeleteTodo($event)"
+                    (editTodo)="onEditTodos($event)"></app-todo-list>
+            </div>
+            <div class="col-md-6 col-sm-12 mt-3">
+                <app-todo-form [(todo)]="todo"></app-todo-form>
+            </div>
+        </div>
+    </div>
+</section>

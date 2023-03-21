@@ -1,0 +1,10 @@
+<h2>Child.component</h2>
+
+<p>Title : {{title}}</p>
+
+<button class="btn btn-primary" (click)="countChange(clickCount)">Change Count</button>
+
+<br>
+<br>
+
+<input type="text" [(ngModel)]="childName" (ngModelChange)="nameChange($event)">
